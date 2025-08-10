@@ -12,9 +12,29 @@ html, body {
 }
 
 body {
-    background: linear-gradient(to right, #828282, #383838);
-    color: #e0e0e0;
+    background-image: url(/foto/122334.jpg);
     flex-grow: 1; /* supaya isi mengisi ruang yang ada */
+}
+
+.kolom {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.kolom .deskripsi {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'comic sans ms';
+    color: #272727;
+}
+h2 {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #272727;
+    width: 100%;
+    line-height: 50px;
 }
 
 /* Navbar / Header */
@@ -37,7 +57,7 @@ header {
 .logo {
     font-size: 1.5em;
     font-weight: bold;
-    color: #d1d1d1;
+    color: #adadad;
 }
 
 nav a {
@@ -95,21 +115,21 @@ nav a.btn-contact:hover { background: #777; }
 }
 
 .hero-text h1 { font-size: 2.5em; }
-.hero-text h1 span { color: #d1d1d1; }
+.hero-text h1 span { color: #272727; }
 .hero-text h2 { font-size: 2em; margin-top: 10px; }
-.highlight { color: #d1d1d1; }
+.highlight { color: #272727; }
 
 .hero-text p {
     margin: 20px 0;
     line-height: 1.6;
-    color: #ccc;
+    color: #272727;
 }
 
 /* Social Icons */
 .social-icons a {
     margin-right: 15px;
     font-size: 1.5em;
-    color: #bbb;
+    color: #272727;
     transition: transform 0.3s, color 0.3s;
 }
 .social-icons a:hover { transform: scale(1.2); color: #fff; }
@@ -305,3 +325,75 @@ footer a:hover {
     color: #fff;
     transform: scale(1.2);
 }
+
+.pantai {
+  padding-top: 200px;  /* kasih jarak agar konten gak ketutupan header */
+  padding-left: 100px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+}
+
+
+.pantai .box-pantai {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 20px;
+  row-gap: 50px;
+}
+
+.pantai .box-pantai .box {
+  text-align: center;
+  color: rgb(32, 32, 32);
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.pantai .box-pantai .box:hover {
+  transform: translateY(-20px);
+  -webkit-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  -o-transform: translateY(-20px);
+}
+
+.pantai .box-pantai .box img {
+  width: 70%;
+  height: 200px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.pantai .box-pantai .box p {
+  font-weight: 100;
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+.pantai .box-pantai .box .btn-detail {
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  line-height: 40px; /* supaya teks vertical center */
+  background-color: #0050b3;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pantai .box-pantai .box .btn-detail:hover {
+  background-color: #053e83;
+}
+
